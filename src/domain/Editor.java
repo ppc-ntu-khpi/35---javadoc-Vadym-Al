@@ -1,6 +1,20 @@
 package domain;
+/** 
+ * Class that interprise editor
+ * class that extends
+ * @see Artist
+ */
 public class Editor extends Artist {
-
+    
+    /**
+     * Main information of editors
+     * @param electronicEditing
+     * @param skiils skill of working
+     * @param name name 
+     * @param jobTitle job
+     * @param level job level
+     * @param dept payment
+     */
     public Editor(boolean electronicEditing, String[] skiils, String name, String jobTitle, int level, String dept) {
         super(skiils, name, jobTitle, level, dept);
         this.electronicEditing = electronicEditing;

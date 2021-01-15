@@ -1,7 +1,19 @@
 package domain;
-
+/** 
+ * Class that interprise artist
+ * class that extends
+ * @see Employee
+ */
 public class Artist extends Employee {
-
+    
+    /**
+     * Main information of artists
+     * @param skiils skill in worck
+     * @param name name 
+     * @param jobTitle job 
+     * @param level level of job
+     * @param dept payment
+     */
     public Artist(String[] skiils, String name, String jobTitle, int level, String dept) {
         super(name, jobTitle, level, dept);
         this.skiils = skiils;

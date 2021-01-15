@@ -1,11 +1,26 @@
 package domain;
+/** 
+ * Class that interprise manager
+ * class that extends
+ * @see Employee
+ */
 public class Manager extends Employee {
-
+/**
+ * Main information about manager
+ * @param employees
+ * @param name
+ * @param jobTitle
+ * @param level
+ * @param dept 
+ */
     public Manager(Employee[] employees, String name, String jobTitle, int level, String dept) {
         super(name, jobTitle, level, dept);
         this.employees = employees;
     }
-
+/**
+ * Method that return information about manager
+ * @return 
+ */
     @Override
     public String toString() {
         return super.toString()+"\nEmployees: "+getEmployees(); 

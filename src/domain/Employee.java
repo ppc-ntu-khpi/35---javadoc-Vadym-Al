@@ -1,11 +1,19 @@
 package domain;
+/** 
+ * Main class that interprise employer
+ * @author User
+ */
 public class Employee {
 
+/**
+ * Method that you use for convertation informetion into the text
+ * @return String value
+ */
     @Override
     public String toString() {
         return "\nEmployee ID= " + ID + "\nName= " + name + "\nJobTitle= " + jobTitle + "\nLevel= " + level + "\nDept= " + dept;
     }
-
+    
     private String name;
     private String jobTitle;
     private int ID;
@@ -13,7 +21,13 @@ public class Employee {
     private String dept;
 
    // private static int employeesCount = 0;
-
+/**
+ * Mehod for initialization employers
+ * @param name emloyer name 
+ * @param jobTitle emloyer job 
+ * @param level emloyer job level
+ * @param dept emloyer payment
+ */
     public Employee(String name, String jobTitle, int level, String dept) {
         this();
         setName(name);
@@ -36,15 +50,24 @@ public class Employee {
 //            throw new NumberFormatException("ERROR! Employee's ID cannot be greater than 10000. Employee is not created!");
 //        }
     }
-
+   /**
+    * Method for seting job
+    * @param job Emloyer job 
+    */
     public void setJobTitle(String job) {
         jobTitle = job;
     }
-
+/**
+ * Method that return employers job
+ * @return job
+ */
     public String getJobTitle() {
         return jobTitle;
     }
-
+/** 
+ * Method for getting employers name
+ * @return name
+ */
     public String getName() {
         return name;
     }
